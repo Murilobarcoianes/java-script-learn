@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo JavaScript</title>
+
+    <style>
+        body{
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #div_principal{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        </style>
+</head>
+<body>
+    <h1 id="tit">Aprendendo Javascript...</h1>
+    
+    <p id="text"></p>
+
+    <div id="div_principal"></div>
+
+    <script>
+         
+         const h1_tit = document.getElementById('tit');
+
+         h1_tit.style.color = 'blue';
+
+         const p_text = document.getElementById('text');
+
+         //p_text.textContent = 'sou um paragrafo "principal" da pagina'
+
+         p_text.innerHTML = 'sou um paragrafo <b>"principal"</b> da pagina'
+
+        const div_principal = document.getElementById('div_principal');
+
+        div_principal.innerHTML = `
+        <p>textotextotextotextotextotexto textotextotextotextotexto
+            textotextotextotexto textotexto texto texto</p>
+        `
+
+        // Create a new paragraph element and style it
+        const p = document.createElement('p');
+        p.id = 'Principal';
+        p.textContent = 'sou um paragrafo criado dinâmicamente';
+        p.style.color = 'rgb(255, 0, 0)';
+        p.style.fontSize = '1.5rem';
+        p.style.textAlign = 'center';
+
+        div_principal.appendChild(p);
+
+    </script>
+
+</body>
