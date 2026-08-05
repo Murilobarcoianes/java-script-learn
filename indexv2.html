@@ -19,6 +19,12 @@
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
 
+
+        .tit{
+            color: blue;
+            text-align: center;
+        }
+
         </style>
 </head>
 <body>
@@ -33,6 +39,8 @@
          const h1_tit = document.getElementById('tit');
 
          h1_tit.style.color = 'blue';
+
+         h1_tit.setAttribute('class', 'tit');
 
          const p_text = document.getElementById('text');
 
@@ -56,6 +64,7 @@
         p.style.textAlign = 'center';
 
         div_principal.appendChild(p);
+        div_principal.setAttribute('class', 'principal');
 
     </script>
 
