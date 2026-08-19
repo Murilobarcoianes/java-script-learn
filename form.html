@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="" method="">
+
+  <label for="fnome">Nome:</label>
+    <input 
+        type="text"
+        id="fnome"
+        name="fnome"
+        placeholder="Digite seu nome"
+        required
+    > 
+<p>
+    <label for="fdata">Data de Nascimento:</label> <br>
+    <input type="date" name="fdata" id="fdata" required>
+<p>
+    <label>Cursos:</label> <p>
+    <input type="checkbox" id="fcursos1" name="fcursos[]" value="curso1">
+    <label for="fcursos1">Java</label> <p>
+    <input type="checkbox" id="fcursos2" name="fcursos[]" value="curso2">
+    <label for="fcursos2">Python</label> <p>
+    <input type="checkbox" id="fcursos3" name="fcursos[]" value="curso3">
+    <label for="fcursos3">C++</label> <p>
+    <input type="checkbox" id="fcursos4" name="fcursos[]" value="curso4">
+    <label for="fcursos4">lua</label> <p>
+<p>
+
+    <p>Escolha seu sexo:</p>
+    <input type="radio" id="fsexo" name="fsexo" value="masc"><label for="fsexo1">Masculino</label> <p>
+    <input type="radio" id="fsexo" name="fsexo" value="fem"><label for="fsexo2">Feminino</label> <p>
+    <input type="radio" id="fsexo" name="fsexo" value="outro"><label for="fsexo3">Outro</label> <p>
+
+<p>
+    <label for="fsenha">Senha:</label> <br>
+    <input type="password" name="fsenha" id="fsenha" required>
+</p>
+
+    <input type ="submit" value="enviar">
+</form>
+
+
+</body>
+</html>
