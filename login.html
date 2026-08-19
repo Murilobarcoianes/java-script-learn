@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="body">
+    <form action="" method="post" class="box">
+        <label for="fnome">Entrar:</label>
+        <input 
+            type="text"
+            id="Bnome"
+            name="fnome"
+            placeholder="Digite seu nome"
+            required
+        >
+
+        <input
+            type="password"
+            id="Bsenha"
+            name="fsenha"
+            placeholder="Digite sua senha"
+            required
+        >
+
+        <button onclick="Login()">Entrar</button>
+
+
+    <script>
+        function Login() {
+            document.getElementById('Bsenha').value;
+            if (document.getElementById('Bnome').value == 'Murilo' && document.getElementById('Bsenha').value == '4433@') {
+            alert('Login bem-sucedido!');
+        } else {
+            alert('Nome de usuário ou senha incorretos.');
+        }}
+    </script>
+</body>
+</html>
