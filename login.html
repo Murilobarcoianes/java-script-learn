@@ -30,12 +30,16 @@
 
     <script>
         function Login() {
-            document.getElementById('Bsenha').value;
-            if (document.getElementById('Bnome').value == 'Murilo' && document.getElementById('Bsenha').value == '4433@') {
-            alert('Login bem-sucedido!');
-        } else {
-            alert('Nome de usuário ou senha incorretos.');
-        }}
+            const senha = document.getElementById('Bsenha').value;
+            const nome = document.getElementById('Bnome').value;
+
+            if (nome == 'Murilo' && senha == '4433@') {
+                alert('Login bem-sucedido!');
+                // Redirecionar para outra página após login bem-sucedido
+            } else {
+                alert('Nome de usuário ou senha incorretos.');
+            }
+        }
     </script>
 </body>
 </html>
