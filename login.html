@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body class="body">
-    <form action="" method="post" class="box">
+    <form action="" method="post" class="box" id="loginBox">
         <label for="fnome">Entrar:</label>
         <input 
             type="text"
@@ -25,19 +25,27 @@
             required
         >
 
-        <button onclick="Login()">Entrar</button>
-
+        <button type="button" onclick="Login()">Entrar</button>
+    </form>
 
     <script>
         function Login() {
             const senha = document.getElementById('Bsenha').value;
             const nome = document.getElementById('Bnome').value;
+            const box = document.getElementById('loginBox');
 
-            if (nome == 'Murilo' && senha == '4433@') {
-                alert('Login bem-sucedido!');
-                // Redirecionar para outra página após login bem-sucedido
+            if (nome === 'timeless' && senha === '45564') {
+                document.body.classList.add('success');
+                box.classList.add('success');
+                box.classList.remove('error');
+
+                setTimeout(() => {
+                    window.location.href = 'indexv2.html';
+                }, 800);
             } else {
-                alert('Nome de usuário ou senha incorretos.');
+                document.body.classList.remove('success');
+                box.classList.remove('success');
+                box.classList.add('error');
             }
         }
     </script>
