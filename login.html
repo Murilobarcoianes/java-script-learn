@@ -36,7 +36,9 @@
 
             if (nome === 'timeless' && senha === '45564') {
                 document.body.classList.add('success');
+
                 box.classList.add('success');
+
                 box.classList.remove('error');
 
                 setTimeout(() => {
@@ -44,7 +46,9 @@
                 }, 800);
             } else {
                 document.body.classList.remove('success');
+
                 box.classList.remove('success');
+                
                 box.classList.add('error');
             }
         }
