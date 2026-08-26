@@ -2,7 +2,7 @@
 
 // console.log(frutas);
 
-//let frutas = ['banana', 'maçã', 'abacaxi', 'perâ'];
+let frutas = ['banana', 'maçã', 'abacaxi', 'perâ'];
 
 //for(let i = 0; i < frutas.length; i++) {
 //  console.log(frutas[i]);}
@@ -26,3 +26,6 @@ precos
     .reduce((soma,valor) => soma + valor, 0);
     //.forEach((preco) => console.log(`R$ ${preco.toFixed(2)}`));
 console.log(`R$ ${valor.toFixed(2)}`);
+
+frutas.sort((a,b) => a - b)
+.forEach((fruta) => console.log(fruta));
