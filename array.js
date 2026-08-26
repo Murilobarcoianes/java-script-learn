@@ -21,3 +21,8 @@ precos
     .map((preco) => preco * 1.10)
     .filter((valor) => valor < 30)
     .forEach((preco) => console.log(`R$ ${preco.toFixed(2)}`));
+
+precos
+    .reduce((soma,valor) => soma + valor, 0);
+    //.forEach((preco) => console.log(`R$ ${preco.toFixed(2)}`));
+console.log(`R$ ${valor.toFixed(2)}`);
