@@ -20,4 +20,4 @@ let precos = [10, 20, 30, 40, 50];
 precos
     .map((preco) => preco * 1.10)
     .filter((valor) => valor < 30)
-    .forEach((preco) => console.log(preco.toFixed(2)));
+    .forEach((preco) => console.log(`R$ ${preco.toFixed(2)}`));
