@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body id="body">
+    
+<form>
+    <div id="cursos">
+        <h3>Cursos</h3>
+
+    </div>
+
+</form>
+
+    <script>
+        const cursos = ['Desenvolvimento Web', 'Design Gráfico', 'Marketing Digital', 'Fotografia', 'Edição de Vídeo', 'Programação Mobile', 'Inteligência Artificial', 'Segurança Cibernética', 'Análise de Dados', 'Desenvolvimento de Jogos'
+        ];
+
+        const divCursos = document.getElementById('cursos');
+
+        cursos.forEach((curso) => {
+            const inputRadio = document.createElement('input');
+            inputRadio.setAttribute('type', 'radio');
+            inputRadio.setAttribute('name', 'curso');
+            const label = document.createElement('label');
+            label.innerHTML = curso;
+            const br = document.createElement('br');
+
+            divCursos.appendChild(inputRadio);
+            divCursos.append(label);
+            divCursos.append(br);
+        });
+
+    </script>
+
+</body>
+</html>
